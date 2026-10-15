@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex  & Grid</title>
+</head>
+<style>
+    .container-item{
+        background-color: brown;
+        color:beige;
+        padding:10px;
+        width:50%;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        text-align: center;
+        grid-gap:10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="container-item">
+            <h2>Box 1</h2>
+        </div>
+        <div class="container-item">
+            <h2>Box 2</h2>
+        </div>
+        <div class="container-item">
+            <h2>Box 3</h2>
+        </div>
+        <div class="container-item">
+            <h2>Box 4</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Topics</title>
+</head>
+<style>
+    body{
+        background-color: rgb(213, 218, 224);
+    }
+    header{
+        background-color: rgb(85, 85, 221);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    ul li.item{
+        position: relative;
+        background-color: white;
+        list-style-type: none;
+        padding:15px;
+        border-radius: 10px;
+        list-style-position: inside;
+    }
+    ul li.items{
+        background-color: white;
+        list-style-position: inside;
+        padding: 15px;
+        border-radius: 10px;
+        color: gray;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        justify-content: center;
+    }
+    ul li.item::before{
+        content:" ";
+        position:absolute;
+        left:10px;
+        top:20px;
+        background-color: green;
+        width:8px;
+        height:8px;
+        border-radius: 50%;
+        animation: pulse 1s infinite;
+    }
+    @keyframes pulse{
+        0%{transform: scale(1)}
+        50%{transform:scale(1.5)}
+        100%{transform: scale(1)}
+        }
+</style>
+<body>
+    <header>
+        <h1>Today's Topics</h1>
+    </header>
+    <ul>
+        <li class="item"> &nbsp; &nbsp; Revise Html Concepts</li>
+        <li class="items"><s>Practice CSS Designs</s></li>
+        <li class="item"> &nbsp; &nbsp; Get started with Javascript</li>
+    </ul>
+</body>
+</html>

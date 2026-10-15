@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main{
+        border: 2px solid black;
+        padding:10px 15px;
+    }
+    p span{
+        display:inline-block;
+        transform: rotate(180deg);
+    }
+    p:hover span{
+        animation: back ease both;
+    }
+    @keyframes back{
+        from{transform: rotate(180deg)}
+        to{transform: rotate(0deg)}
+    }
+    article{
+        display: none;
+    }
+    main:hover article{
+        display: inline;
+    }
+</style>
+<body>
+    <main>
+    <p>is my data safe <span> ^ </span></p>
+    <article>Yes your answer is right</article>
+    </main>
+
+
+    <main>
+    <article>
+        <h2>Travel Guide</h2>
+        <p>Here is our guide to Kerala...</p>
+    </article>
+
+    <aside>
+        <h3>Travel Tip</h3>
+        <p>Carry an umbrella during monsoon.</p>
+    </aside>
+</main>
+
+
+</body>
+</html>

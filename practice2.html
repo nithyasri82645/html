@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Goals</title>
+</head>
+<style>
+    header{
+        background-color:rgb(88, 88, 46);
+        color:azure;
+        padding:10px;
+        text-align: center;
+        animation:fade 0.5s ease forwards;
+        }
+        .study{
+            background-color: rgb(169, 146, 118);
+            box-sizing: border-box;
+            padding:5px;
+            box-shadow: 2px 2px 2px 2px rgb(108, 87, 60);
+            transition: transform 0.2s ease;
+            animation:fade 0.5s ease forwards;
+        }
+        .study:hover{
+            transform: translateY(-5px);
+        }
+        .coding{
+            background-color: rgb(169, 146, 118);
+            box-sizing: border-box;
+            padding:5px;
+            box-shadow: 2px 2px 2px 2px rgb(108, 87, 60);
+            transition: transform 0.2s ease;
+            animation:fade 0.5s ease forwards;
+        }
+        .coding:hover{
+            transform: translateY(-5px);
+        }
+        .fitness{
+            background-color: rgb(169, 146, 118);
+            box-sizing: border-box;
+            padding:5px;
+            box-shadow: 2px 2px 2px 2px rgb(108, 87, 60);
+            transition: transform 0.2s ease;
+            animation:fade 0.5s ease forwards;
+        }
+        .fitness:hover{
+            transform: translateY(-5px);
+        }
+        .relax{
+            background-color: rgb(169, 146, 118);
+            box-sizing: border-box;
+            padding:5px;
+            box-shadow: 2px 2px 2px 2px rgb(108, 87, 60);
+            transition: transform 0.2s ease;
+            animation:fade 0.5s ease forwards;
+        }
+        .relax:hover{
+            transform: translateY(-5px);
+        }
+        main{
+            position: relative;
+            top:15px;
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap: 15px;
+            grid-column-gap:10px ;
+            align-items:center ;
+            }
+            @keyframes fade{
+                from{
+                    opacity:0;
+                    transform:translateY(20px);
+                }
+                to{
+                    opacity:1;
+                    transform: translateY(0);
+                }
+            }
+</style>
+<body>
+    <header>
+        <h1>My Daily  Goals</h1>
+    </header>
+    <main>
+    <div class="study">
+        <h2>Study</h2>
+        <p>Complete CSS Exercises</p>
+    </div>
+    <div class="coding">
+        <h2>Coding</h2>
+        <p>Practice CSS for 30 minutes</p>
+    </div>
+    <div class="fitness">
+        <h2>Fitness</h2>
+        <p>Take a short walk</p>
+    </div>
+    <div class="relax">
+        <h2>Relax</h2>
+        <p>Listen to music</p>
+    </div>
+    </main>
+</body>
+</html>
